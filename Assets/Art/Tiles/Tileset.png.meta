@@ -1,49 +1,55 @@
 fileFormatVersion: 2
-guid: aed285fc65ca74d46af36207961c5040
+guid: 5eb048f528bb49547a878e958eb8673e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1922898261450654940
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_0
+      213: 641515894465698295
+    second: Sprite-0008_0
   - first:
-      213: -2142852043853281391
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_1
+      213: -2939801824191070668
+    second: Sprite-0008_1
   - first:
-      213: -3714856413733390777
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_2
+      213: -6540123201979456734
+    second: Sprite-0008_2
   - first:
-      213: -3060722139661919588
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_3
+      213: 1071377053553539095
+    second: Sprite-0008_3
   - first:
-      213: 6060307108869544871
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_4
+      213: -520590931183156557
+    second: Sprite-0008_4
   - first:
-      213: -8486479101973093275
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_5
+      213: -5403917745769237638
+    second: Sprite-0008_5
   - first:
-      213: -1790026782360560201
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_6
+      213: -4980295634984467156
+    second: Sprite-0008_6
   - first:
-      213: 8554899012860770113
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_7
+      213: -8656567730949352908
+    second: Sprite-0008_7
   - first:
-      213: -6715284877467245225
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_8
+      213: 2559111868862132359
+    second: Sprite-0008_8
   - first:
-      213: -4009444842113453099
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_9
+      213: -738103391432083122
+    second: Sprite-0008_9
   - first:
-      213: -6887530897730800845
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_10
+      213: -2827988951304207363
+    second: Sprite-0008_10
   - first:
-      213: 6216511744800481413
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_11
+      213: 1423615415337032557
+    second: Sprite-0008_11
   - first:
-      213: -5362979831068295897
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_12
+      213: 4670647353985871314
+    second: Sprite-0008_12
   - first:
-      213: -4294943091173730588
-    second: Top_down_angle_like_River_Raider_-_1._Honey_like_w_13
+      213: 106134801540683738
+    second: Sprite-0008_13
+  - first:
+      213: -8854379742309560046
+    second: Sprite-0008_14
+  - first:
+      213: -2972096663633545671
+    second: Sprite-0008_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,11 +184,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_0
+      name: Sprite-0008_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 51
+        x: 29
+        y: 83
         width: 16
         height: 16
       alignment: 0
@@ -193,216 +199,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd48bf4e7c18faa10800000000000000
-      internalID: 1922898261450654940
+      spriteID: 7f9156f9e4f17e800800000000000000
+      internalID: 641515894465698295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_1
+      name: Sprite-0008_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 51
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 197c7ef5b6f0342e0800000000000000
-      internalID: -2142852043853281391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_2
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 51
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 746f6db16cd227cc0800000000000000
-      internalID: -3714856413733390777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_3
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 51
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c9a174d2e612685d0800000000000000
-      internalID: -3060722139661919588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7ab91f5e4398a1450800000000000000
-      internalID: 6060307108869544871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_5
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5642e155838f93a80800000000000000
-      internalID: -8486479101973093275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_6
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7bd96fa102c8827e0800000000000000
-      internalID: -1790026782360560201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_7
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 34
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 147f7ee835b19b670800000000000000
-      internalID: 8554899012860770113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 18
-        width: 17
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7552309abf38ec2a0800000000000000
-      internalID: -6715284877467245225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_9
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 16
-        width: 17
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d33e47b8279b58c0800000000000000
-      internalID: -4009444842113453099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_10
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 17
+        x: 46
+        y: 83
         width: 15
         height: 16
       alignment: 0
@@ -413,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3337a35e3239a60a0800000000000000
-      internalID: -6887530897730800845
+      spriteID: 43ebb0f01d9b337d0800000000000000
+      internalID: -2939801824191070668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_11
+      name: Sprite-0008_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 17
-        height: 17
+        x: 62
+        y: 83
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -435,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58060e2de7c754650800000000000000
-      internalID: 6216511744800481413
+      spriteID: 22369be4990dc35a0800000000000000
+      internalID: -6540123201979456734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_12
+      name: Sprite-0008_3
       rect:
         serializedVersion: 2
-        x: 19
-        y: 0
-        width: 17
-        height: 15
+        x: 79
+        y: 83
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,18 +265,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72df697024ed295b0800000000000000
-      internalID: -5362979831068295897
+      spriteID: 7183099f0cb4ede00800000000000000
+      internalID: 1071377053553539095
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top_down_angle_like_River_Raider_-_1._Honey_like_w_13
+      name: Sprite-0008_4
       rect:
         serializedVersion: 2
-        x: 38
-        y: 0
+        x: 29
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2c9896e4d76c8f0800000000000000
+      internalID: -520590931183156557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 66
         width: 15
         height: 16
       alignment: 0
@@ -479,8 +309,228 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e65210a30c4564c0800000000000000
-      internalID: -4294943091173730588
+      spriteID: a73befff07d6105b0800000000000000
+      internalID: -5403917745769237638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c258258b18f62eab0800000000000000
+      internalID: -4980295634984467156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 66
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43297ae5381bdd780800000000000000
+      internalID: -8656567730949352908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_8
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 49
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780730c9faac38320800000000000000
+      internalID: 2559111868862132359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 49
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e49fd2a40eab1c5f0800000000000000
+      internalID: -738103391432083122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df388c83807f0c8d0800000000000000
+      internalID: -2827988951304207363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b1fe77da2b1c310800000000000000
+      internalID: 1423615415337032557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_12
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 32
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd2275b50971d040800000000000000
+      internalID: 4670647353985871314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_13
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad793282a01197100800000000000000
+      internalID: 106134801540683738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2115931798cee1580800000000000000
+      internalID: -8854379742309560046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-0008_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 936bffdc4ddf0c6d0800000000000000
+      internalID: -2972096663633545671
       vertices: []
       indices: 
       edges: []
@@ -489,7 +539,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 09762332b8604ac46bf83b3ef57e1ade
+    spriteID: 1646ecb18b6a84545bb07b8b5249158e
     internalID: 0
     vertices: []
     indices: 
@@ -499,22 +549,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":14.0,"y":13.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_0: 1922898261450654940
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_1: -2142852043853281391
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_10: -6887530897730800845
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_11: 6216511744800481413
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_12: -5362979831068295897
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_13: -4294943091173730588
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_2: -3714856413733390777
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_3: -3060722139661919588
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_4: 6060307108869544871
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_5: -8486479101973093275
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_6: -1790026782360560201
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_7: 8554899012860770113
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_8: -6715284877467245225
-      Top_down_angle_like_River_Raider_-_1._Honey_like_w_9: -4009444842113453099
+      Sprite-0008_0: 641515894465698295
+      Sprite-0008_1: -2939801824191070668
+      Sprite-0008_10: -2827988951304207363
+      Sprite-0008_11: 1423615415337032557
+      Sprite-0008_12: 4670647353985871314
+      Sprite-0008_13: 106134801540683738
+      Sprite-0008_14: -8854379742309560046
+      Sprite-0008_15: -2972096663633545671
+      Sprite-0008_2: -6540123201979456734
+      Sprite-0008_3: 1071377053553539095
+      Sprite-0008_4: -520590931183156557
+      Sprite-0008_5: -5403917745769237638
+      Sprite-0008_6: -4980295634984467156
+      Sprite-0008_7: -8656567730949352908
+      Sprite-0008_8: 2559111868862132359
+      Sprite-0008_9: -738103391432083122
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
