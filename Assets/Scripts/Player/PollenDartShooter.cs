@@ -2,7 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// Fires pooled pollen darts upward on a cooldown while the fire button is held.
+/// Fires pooled pollen darts upward on a cooldown, with the Fire animation
+/// driven by an "is firing" bool that's held for a full clip per shot.
 public class PollenDartShooter : MonoBehaviour
 {
     [Header("Input")]
@@ -14,12 +15,15 @@ public class PollenDartShooter : MonoBehaviour
     [SerializeField] private Transform muzzle;        // spawn point, just above Bumble
 
     [Header("Fire")]
-    [SerializeField] private float fireCooldown = 0.25f; // seconds between shots
-    [SerializeField] private Animator animator;          // optional: plays Fire anim
+    [SerializeField] private float fireCooldown = 0.2f;     // seconds between darts (gameplay rate)
+    [SerializeField] private Animator animator;
+    [SerializeField] private float fireAnimLength = 0.8f;   // your Fire clip length (8 frames @ 10 fps)
 
     private readonly List<PollenDart> pool = new();
     private float cooldownTimer;
+    private float animHoldTimer;
 
+    // ── KEEP: builds the pool ──
     private void Awake()
     {
         for (int i = 0; i < poolSize; i++)
@@ -30,31 +34,39 @@ public class PollenDartShooter : MonoBehaviour
         }
     }
 
+    // ── KEEP: enable/disable the fire action ──
     private void OnEnable()  => fireAction.action.Enable();
     private void OnDisable() => fireAction.action.Disable();
 
+    // ── UPDATED ──
     private void Update()
     {
         cooldownTimer -= Time.deltaTime;
+        if (animHoldTimer > 0f) animHoldTimer -= Time.deltaTime;
 
-        bool firing = fireAction.action.IsPressed();
-        if (animator != null) animator.SetBool("IsFiring", firing);   // drives the Fire/Fly state
+        bool firePressed = fireAction.action.IsPressed();
 
-        if (firing && cooldownTimer <= 0f)
+        if (firePressed && cooldownTimer <= 0f)
         {
             Fire();
             cooldownTimer = fireCooldown;
+            animHoldTimer = fireAnimLength;   // guarantees a full Fire cycle from this shot
         }
+
+        // Fire pose stays while held OR while a shot's animation is still playing out
+        if (animator != null)
+            animator.SetBool("IsFiring", firePressed || animHoldTimer > 0f);
     }
 
+    // ── KEEP (no animator call inside) ──
     private void Fire()
     {
         PollenDart dart = GetPooledDart();
         dart.transform.SetPositionAndRotation(muzzle.position, Quaternion.identity);
         dart.gameObject.SetActive(true);
-        // (no animator call here anymore — IsFiring handles it)
     }
 
+    // ── KEEP ──
     private PollenDart GetPooledDart()
     {
         foreach (var d in pool)
