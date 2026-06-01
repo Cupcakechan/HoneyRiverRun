@@ -14,7 +14,7 @@ public class MainMenuController : MonoBehaviour
     public void OnPlayPressed()
     {
         if (GameManager.Instance != null)
-            GameManager.Instance.SetState(GameState.Playing);
+            GameManager.Instance.StartRun();   // resets lives to 3 + enters Playing
         SceneLoader.LoadGameplay();
     }
 
