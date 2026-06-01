@@ -2209,7 +2209,7 @@ MonoBehaviour:
   dartPrefab: {fileID: -8919989468965858350, guid: b913b1e605e2f7c4892368890408f76c, type: 3}
   poolSize: 20
   muzzle: {fileID: 1267376885}
-  fireCooldown: 0.25
+  fireCooldown: 0.2
   animator: {fileID: 1439639403}
 --- !u!1 &1268007349
 GameObject:

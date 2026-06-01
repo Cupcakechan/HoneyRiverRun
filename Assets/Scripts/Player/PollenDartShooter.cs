@@ -36,7 +36,11 @@ public class PollenDartShooter : MonoBehaviour
     private void Update()
     {
         cooldownTimer -= Time.deltaTime;
-        if (fireAction.action.IsPressed() && cooldownTimer <= 0f)
+
+        bool firing = fireAction.action.IsPressed();
+        if (animator != null) animator.SetBool("IsFiring", firing);   // drives the Fire/Fly state
+
+        if (firing && cooldownTimer <= 0f)
         {
             Fire();
             cooldownTimer = fireCooldown;
@@ -48,8 +52,7 @@ public class PollenDartShooter : MonoBehaviour
         PollenDart dart = GetPooledDart();
         dart.transform.SetPositionAndRotation(muzzle.position, Quaternion.identity);
         dart.gameObject.SetActive(true);
-
-        if (animator != null) animator.SetTrigger("Fire");
+        // (no animator call here anymore — IsFiring handles it)
     }
 
     private PollenDart GetPooledDart()
