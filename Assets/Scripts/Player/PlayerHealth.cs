@@ -1,8 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-/// Handles Captain Bumble's death. For now: hit a Wall → play Death anim →
-/// placeholder respawn at channel center. Lives/Game Over arrive in later phases.
+/// Handles Captain Bumble's death — from clipping a Wall OR running the honey tank dry.
+/// Plays Death anim → placeholder respawn at channel center, refilling the tank.
+/// Lives/Game Over arrive in later phases.
 public class PlayerHealth : MonoBehaviour
 {
     [Header("References")]
@@ -10,18 +11,37 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private PlayerMovement movement;
     [SerializeField] private PlayerThrottle throttle;
     [SerializeField] private PollenDartShooter shooter;
+    [SerializeField] private HoneyTank tank;
 
     [Header("Death")]
-    [SerializeField] private float deathAnimLength = 1f;          // your Death clip length
+    [SerializeField] private float deathAnimLength = 1f;
     [SerializeField] private Vector2 respawnPosition = new(0f, -3.5f);
 
     private bool isDead;
+
+    private void OnEnable()
+    {
+        if (tank != null) tank.OnEmpty += HandleEmpty;
+    }
+    private void OnDisable()
+    {
+        if (tank != null) tank.OnEmpty -= HandleEmpty;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (isDead) return;
         if (other.CompareTag("Wall"))
-            StartCoroutine(DieAndRespawn());
+            Die();
+    }
+
+    private void HandleEmpty() => Die();
+
+    /// Public entry point so other systems (e.g. the honey tank) can kill the player.
+    public void Die()
+    {
+        if (isDead) return;
+        StartCoroutine(DieAndRespawn());
     }
 
     private IEnumerator DieAndRespawn()
@@ -31,16 +51,17 @@ public class PlayerHealth : MonoBehaviour
         if (movement) movement.enabled = false;
         if (throttle) throttle.enabled = false;
         if (shooter)  shooter.enabled  = false;
+        if (tank)     tank.enabled     = false;   // stop draining during death
 
         if (animator) animator.SetTrigger("Death");
 
         yield return new WaitForSeconds(deathAnimLength);
 
-        // placeholder respawn
-        transform.position = respawnPosition;
+        transform.position = respawnPosition;      // placeholder respawn
 
+        if (tank)     { tank.enabled = true; tank.Refill(); }  // back to a full tank
         if (movement) movement.enabled = true;
-        if (throttle) throttle.enabled = true;   // re-enabling resets scroll speed to baseline
+        if (throttle) throttle.enabled = true;     // re-enabling resets scroll speed to baseline
         if (shooter)  shooter.enabled  = true;
 
         isDead = false;
