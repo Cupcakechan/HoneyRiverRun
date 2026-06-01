@@ -1,16 +1,25 @@
 using UnityEngine;
 
-/// A pooled pollen dart. Flies straight up and deactivates itself
-/// (returning to the pool) once it leaves the top of the screen.
+/// A pooled pollen dart. Flies straight up, deactivates above the screen, and
+/// deactivates on striking a Wasp (telling the Wasp it's been hit).
 public class PollenDart : MonoBehaviour
 {
-    [SerializeField] private float speed = 14f;     // upward units/second
-    [SerializeField] private float despawnY = 7f;   // deactivate above this Y (view top ≈ 5.6)
+    [SerializeField] private float speed = 14f;
+    [SerializeField] private float despawnY = 7f;
 
     private void Update()
     {
         transform.position += Vector3.up * (speed * Time.deltaTime);
         if (transform.position.y >= despawnY)
-            gameObject.SetActive(false); // returns it to the pool
+            gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Wasp wasp = other.GetComponent<Wasp>();
+        if (wasp == null) return;
+
+        wasp.Hit();
+        gameObject.SetActive(false);   // consumed → back to the pool
     }
 }

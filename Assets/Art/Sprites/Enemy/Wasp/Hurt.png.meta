@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 28daba4cbd3754b4a85b569e2ec0db6b
+guid: 2589e1bfb80000b419eaf52e6da99b69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6834037925219054756
-    second: frame_001-Sheet_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: 2124237773911187110
-    second: frame_001-Sheet_1
+      213: 490842205202310979
+    second: Hurt_1
   - first:
-      213: -8379383095575767794
-    second: frame_001-Sheet_2
+      213: -3720053754089064719
+    second: Hurt_2
   - first:
-      213: 8061440664122738888
-    second: frame_001-Sheet_3
+      213: 5649970053243570431
+    second: Hurt_3
   - first:
-      213: -7809230435852570003
-    second: frame_001-Sheet_4
+      213: -371187646486735994
+    second: Hurt_4
   - first:
-      213: 7703684761649482893
-    second: frame_001-Sheet_5
+      213: 1177448812329152706
+    second: Hurt_5
   - first:
-      213: -2509091216425630809
-    second: frame_001-Sheet_6
+      213: 7933592967420663305
+    second: Hurt_6
   - first:
-      213: 1474928844712383011
-    second: frame_001-Sheet_7
+      213: 7273187483062910031
+    second: Hurt_7
+  - first:
+      213: -1817361991890795262
+    second: Hurt_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,12 +163,56 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frame_001-Sheet_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 15
+        y: 16
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 16
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_2
+      rect:
+        serializedVersion: 2
+        x: 133
         y: 17
-        width: 31
+        width: 34
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -175,107 +222,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a4ba32e84167de50800000000000000
-      internalID: 6834037925219054756
+      spriteID: 1f6b92202d6bf5cc0800000000000000
+      internalID: -3720053754089064719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_1
+      name: Hurt_3
       rect:
         serializedVersion: 2
-        x: 77
-        y: 13
-        width: 25
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ae517c200fca7d10800000000000000
-      internalID: 2124237773911187110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 13
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e051b4f687376bb80800000000000000
-      internalID: -8379383095575767794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 13
-        width: 27
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c8ccea929dffdf60800000000000000
-      internalID: 8061440664122738888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 21
-        width: 25
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d62b6dd2b4a00a390800000000000000
-      internalID: -7809230435852570003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 19
-        width: 27
+        x: 190
+        y: 18
+        width: 40
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -285,41 +244,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8c05bf897cf8ea60800000000000000
-      internalID: 7703684761649482893
+      spriteID: ff88d2f14d9b86e40800000000000000
+      internalID: 5649970053243570431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_6
+      name: Hurt_4
       rect:
         serializedVersion: 2
-        x: 377
+        x: 249
         y: 18
-        width: 25
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a3c5e715daed2dd0800000000000000
-      internalID: -2509091216425630809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 17
-        width: 25
+        width: 42
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -329,8 +266,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3221f0248fff77410800000000000000
-      internalID: 1474928844712383011
+      spriteID: 683152a5dc649daf0800000000000000
+      internalID: -371187646486735994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_5
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 18
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0b518d473275010800000000000000
+      internalID: 1177448812329152706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_6
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 18
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90655a715c8c91e60800000000000000
+      internalID: 7933592967420663305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_7
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 17
+        width: 40
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c38c81b7d8fe460800000000000000
+      internalID: 7273187483062910031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hurt_8
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 16
+        width: 39
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2058d0da5ee67c6e0800000000000000
+      internalID: -1817361991890795262
       vertices: []
       indices: 
       edges: []
@@ -339,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9667e352bb86cad4c9b162a94fa302a3
+    spriteID: 2f940a173d0ca2545bd28ac0bfebc557
     internalID: 0
     vertices: []
     indices: 
@@ -351,14 +376,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      frame_001-Sheet_0: 6834037925219054756
-      frame_001-Sheet_1: 2124237773911187110
-      frame_001-Sheet_2: -8379383095575767794
-      frame_001-Sheet_3: 8061440664122738888
-      frame_001-Sheet_4: -7809230435852570003
-      frame_001-Sheet_5: 7703684761649482893
-      frame_001-Sheet_6: -2509091216425630809
-      frame_001-Sheet_7: 1474928844712383011
+      Hurt_0: -2048800907179887802
+      Hurt_1: 490842205202310979
+      Hurt_2: -3720053754089064719
+      Hurt_3: 5649970053243570431
+      Hurt_4: -371187646486735994
+      Hurt_5: 1177448812329152706
+      Hurt_6: 7933592967420663305
+      Hurt_7: 7273187483062910031
+      Hurt_8: -1817361991890795262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

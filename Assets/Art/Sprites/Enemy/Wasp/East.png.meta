@@ -1,31 +1,34 @@
 fileFormatVersion: 2
-guid: 28daba4cbd3754b4a85b569e2ec0db6b
+guid: 26443a709d568474e81f3c4fa06dee78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6834037925219054756
-    second: frame_001-Sheet_0
+      213: 888789885651089065
+    second: East_0
   - first:
-      213: 2124237773911187110
-    second: frame_001-Sheet_1
+      213: -8816602453348945493
+    second: East_1
   - first:
-      213: -8379383095575767794
-    second: frame_001-Sheet_2
+      213: 5407964954403350842
+    second: East_2
   - first:
-      213: 8061440664122738888
-    second: frame_001-Sheet_3
+      213: -246450088229463257
+    second: East_3
   - first:
-      213: -7809230435852570003
-    second: frame_001-Sheet_4
+      213: -5599660669506328535
+    second: East_4
   - first:
-      213: 7703684761649482893
-    second: frame_001-Sheet_5
+      213: -7051552623725183645
+    second: East_5
   - first:
-      213: -2509091216425630809
-    second: frame_001-Sheet_6
+      213: 8713551247431823281
+    second: East_6
   - first:
-      213: 1474928844712383011
-    second: frame_001-Sheet_7
+      213: 8612946748968181781
+    second: East_7
+  - first:
+      213: 8017290327450008705
+    second: East_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,122 +163,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frame_001-Sheet_0
+      name: East_0
       rect:
         serializedVersion: 2
         x: 14
-        y: 17
+        y: 15
         width: 31
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a4ba32e84167de50800000000000000
-      internalID: 6834037925219054756
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 13
-        width: 25
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ae517c200fca7d10800000000000000
-      internalID: 2124237773911187110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 13
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e051b4f687376bb80800000000000000
-      internalID: -8379383095575767794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 13
-        width: 27
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8c8ccea929dffdf60800000000000000
-      internalID: 8061440664122738888
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 257
-        y: 21
-        width: 25
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d62b6dd2b4a00a390800000000000000
-      internalID: -7809230435852570003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: frame_001-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 19
-        width: 27
         height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -285,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8c05bf897cf8ea60800000000000000
-      internalID: 7703684761649482893
+      spriteID: 9a6713621bd955c00800000000000000
+      internalID: 888789885651089065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_6
+      name: East_1
       rect:
         serializedVersion: 2
-        x: 377
-        y: 18
-        width: 25
-        height: 27
+        x: 72
+        y: 15
+        width: 34
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,19 +200,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a3c5e715daed2dd0800000000000000
-      internalID: -2509091216425630809
+      spriteID: ba17c42f7c225a580800000000000000
+      internalID: -8816602453348945493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_7
+      name: East_2
       rect:
         serializedVersion: 2
-        x: 437
-        y: 17
-        width: 25
+        x: 130
+        y: 16
+        width: 35
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -329,8 +222,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3221f0248fff77410800000000000000
-      internalID: 1474928844712383011
+      spriteID: a3929f03973fc0b40800000000000000
+      internalID: 5407964954403350842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 17
+        width: 35
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b183453fe649cf0800000000000000
+      internalID: -246450088229463257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_4
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 17
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92869531a420a42b0800000000000000
+      internalID: -5599660669506328535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_5
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 16
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36df2ebdf3ad32e90800000000000000
+      internalID: -7051552623725183645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 16
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfe55371b0cce870800000000000000
+      internalID: 8713551247431823281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 17
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510aa915f65578770800000000000000
+      internalID: 8612946748968181781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: East_8
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 17
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c35dc4313234f60800000000000000
+      internalID: 8017290327450008705
       vertices: []
       indices: 
       edges: []
@@ -339,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9667e352bb86cad4c9b162a94fa302a3
+    spriteID: 8f72304fe91de7840b070fe1f63a22ff
     internalID: 0
     vertices: []
     indices: 
@@ -351,14 +376,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      frame_001-Sheet_0: 6834037925219054756
-      frame_001-Sheet_1: 2124237773911187110
-      frame_001-Sheet_2: -8379383095575767794
-      frame_001-Sheet_3: 8061440664122738888
-      frame_001-Sheet_4: -7809230435852570003
-      frame_001-Sheet_5: 7703684761649482893
-      frame_001-Sheet_6: -2509091216425630809
-      frame_001-Sheet_7: 1474928844712383011
+      East_0: 888789885651089065
+      East_1: -8816602453348945493
+      East_2: 5407964954403350842
+      East_3: -246450088229463257
+      East_4: -5599660669506328535
+      East_5: -7051552623725183645
+      East_6: 8713551247431823281
+      East_7: 8612946748968181781
+      East_8: 8017290327450008705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
