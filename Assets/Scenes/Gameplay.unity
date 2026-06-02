@@ -4773,6 +4773,7 @@ MonoBehaviour:
   respawnPosition: {x: 0, y: -3.5}
   invulnDuration: 1.5
   blinkInterval: 0.15
+  bodyCollider: {fileID: 1439639401}
 --- !u!114 &1439639407
 MonoBehaviour:
   m_ObjectHideFlags: 0

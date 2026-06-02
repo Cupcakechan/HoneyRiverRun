@@ -23,8 +23,18 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnDuration = 1.5f;
     [SerializeField] private float blinkInterval = 0.15f;
 
+    [Header("Bank Re-check")]
+
+    [Tooltip("Bumble's own Collider2D — used to re-test wall overlap when invulnerability ends. Auto-grabbed if left empty.")]
+    [SerializeField] private Collider2D bodyCollider;
+
     private bool isDead;
     private bool isInvulnerable;
+
+    private void Awake()
+    {
+        if (bodyCollider == null) bodyCollider = GetComponent<Collider2D>();
+    }
 
     private void OnEnable()
     {
@@ -48,6 +58,7 @@ public class PlayerHealth : MonoBehaviour
         if (isDead || isInvulnerable) return;
         StartCoroutine(DieAndRespawn());
     }
+    private readonly Collider2D[] overlapResults = new Collider2D[8];
 
     private IEnumerator DieAndRespawn()
     {
@@ -96,8 +107,26 @@ public class PlayerHealth : MonoBehaviour
 
         if (spriteRenderer) spriteRenderer.enabled = true; // ensure visible
         isInvulnerable = false;
+        // If she rode out invulnerability while sitting inside a bank, kill her now.
+        if (IsInsideWall()) Die();
     }
 
+    /// True if Bumble's collider currently overlaps a wall trigger.
+    /// True if Bumble's collider currently overlaps a wall trigger.
+    private bool IsInsideWall()
+    {
+        if (bodyCollider == null) return false;
+
+        ContactFilter2D filter = ContactFilter2D.noFilter;
+        filter.useTriggers = true;   // the banks are trigger colliders
+
+        int count = bodyCollider.Overlap(filter, overlapResults);
+        for (int i = 0; i < count; i++)
+            if (overlapResults[i] != null && overlapResults[i].CompareTag("Wall"))
+                return true;
+
+        return false;
+    }
     private void GameOver()
     {
         if (gameOverController != null)
