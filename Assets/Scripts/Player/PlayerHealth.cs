@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private PlayerThrottle throttle;
     [SerializeField] private PollenDartShooter shooter;
     [SerializeField] private HoneyTank tank;
+    [SerializeField] private GameOverController gameOverController;
 
     [Header("Death")]
     [SerializeField] private float deathAnimLength = 1f;
@@ -99,8 +100,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void GameOver()
     {
-        if (GameManager.Instance != null)
-            GameManager.Instance.SetState(GameState.GameOver);
-        SceneLoader.LoadMainMenu();   // placeholder — Phase 11 adds the real Game Over screen
+        if (gameOverController != null)
+            gameOverController.Show();           // overlay handles state, freeze, and score
+        else
+            SceneLoader.LoadMainMenu();          // fallback if the controller isn't wired
     }
 }

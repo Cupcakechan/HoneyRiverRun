@@ -24,7 +24,8 @@ public class MainMenuController : MonoBehaviour
     public void OpenHighScores()
     {
         if (highScoreValueText != null && GameManager.Instance != null)
-            highScoreValueText.text = GameManager.Instance.HighScore.ToString();
+            highScoreValueText.text =
+                $"{GameManager.Instance.HighScoreInitials}   {GameManager.Instance.HighScore:D7}";
         highScorePanel.SetActive(true);
     }
     public void CloseHighScores() => highScorePanel.SetActive(false);
