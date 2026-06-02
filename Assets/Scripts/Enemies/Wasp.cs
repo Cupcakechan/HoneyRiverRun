@@ -34,6 +34,9 @@ public class Wasp : MonoBehaviour, ISpawnable
     [SerializeField] private float weightWest   = 0.2f;
     [SerializeField] private float weightStatic = 0.2f;
 
+    [Header("Scoring")]
+    [SerializeField] private int scoreValue = 40;   // GDD §11: Wasp = 40   
+
     private WaspMode mode;
     private bool isHit;
 
@@ -75,10 +78,14 @@ public class Wasp : MonoBehaviour, ISpawnable
     }
 
     /// Called by a Pollen Dart that strikes this Wasp.
+   /// Called by a Pollen Dart that strikes this Wasp.
     public void Hit()
     {
         if (isHit) return;
         isHit = true;                        // harmless from this instant
+
+        ScoreManager.Instance?.AddScore(scoreValue);   // award points for the kill
+
         if (animator) animator.Play("Hurt");
         StartCoroutine(HurtThenDespawn());
     }
