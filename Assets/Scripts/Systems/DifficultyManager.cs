@@ -14,7 +14,8 @@ public class DifficultyManager : MonoBehaviour
     [SerializeField] private float maxScroll     = 2.0f;    // up to 2.0x river speed
     [SerializeField] private float maxEnemyRate   = 2.5f;    // up to 2.5x enemy density
     [SerializeField] private float minOrbRate      = 0.4f;    // down to 40% orb frequency
-
+    [SerializeField] private float islandRateStep = 0.10f;   // +10% island frequency per gate
+    [SerializeField] private float maxIslandRate  = 2.5f;
     private void OnEnable()
     {
         Difficulty.Reset();   // every run starts at baseline
@@ -33,5 +34,6 @@ public class DifficultyManager : MonoBehaviour
         Difficulty.ScrollMultiplier    = Mathf.Min(maxScroll,    Difficulty.ScrollMultiplier    + scrollStep);
         Difficulty.EnemyRateMultiplier = Mathf.Min(maxEnemyRate, Difficulty.EnemyRateMultiplier + enemyRateStep);
         Difficulty.OrbRateMultiplier   = Mathf.Max(minOrbRate,   Difficulty.OrbRateMultiplier   - orbRateStep);
+        Difficulty.IslandRateMultiplier = Mathf.Min(maxIslandRate, Difficulty.IslandRateMultiplier + islandRateStep);
     }
 }

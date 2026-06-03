@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// Which difficulty lever this spawner's rate follows.
-public enum SpawnRateChannel { None, Enemy, Orb }
+public enum SpawnRateChannel { None, Enemy, Orb, Island }
 
 /// Generic, reusable pooled spawner. Activates a pooled instance on a randomized
 /// interval and calls OnSpawned(). The interval scales with difficulty based on its
@@ -55,6 +55,7 @@ public class Spawner : MonoBehaviour
         {
             case SpawnRateChannel.Enemy: return Difficulty.EnemyRateMultiplier;
             case SpawnRateChannel.Orb:   return Difficulty.OrbRateMultiplier;
+            case SpawnRateChannel.Island: return Difficulty.IslandRateMultiplier;
             default:                     return 1f;
         }
     }
