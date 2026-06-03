@@ -32,6 +32,8 @@ public class PlayerThrottle : MonoBehaviour
             ? Mathf.Lerp(baselineSpeed, maxSpeed, input)
             : Mathf.Lerp(baselineSpeed, minSpeed, -input);
 
+                    target *= Difficulty.ScrollMultiplier;   // difficulty lifts the whole speed band
+
         // ease the world's scroll speed toward that target
         WorldScroll.Speed = Mathf.MoveTowards(WorldScroll.Speed, target, acceleration * Time.deltaTime);
     }
