@@ -82,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1195458779362535816, guid: 93a19cd2d0d355d4e92af6c7c4739d81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24384c2d2dfad8446bf9f8159c9bb3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BloomOrb
+  topY: 7
   despawnY: -7
-  respawnY: 7
   minX: -4
   maxX: 4

@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5594754092541031236, guid: 86a1e8ec0717c654a80589b17f3eade3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -208,3 +208,4 @@ MonoBehaviour:
   weightEast: 0.2
   weightWest: 0.2
   weightStatic: 0.2
+  scoreValue: 40
