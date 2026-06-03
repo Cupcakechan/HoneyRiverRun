@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: 28daba4cbd3754b4a85b569e2ec0db6b
+guid: 9c4013fbdd9d1c345a664ddf902a9c9d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6834037925219054756
-    second: frame_001-Sheet_0
+      213: 1098286324429101383
+    second: Fire_0
   - first:
-      213: 2124237773911187110
-    second: frame_001-Sheet_1
+      213: 7419590508823533442
+    second: Fire_1
   - first:
-      213: -8379383095575767794
-    second: frame_001-Sheet_2
+      213: 2333874723133794383
+    second: Fire_2
   - first:
-      213: 8061440664122738888
-    second: frame_001-Sheet_3
+      213: 6211036013863027259
+    second: Fire_3
   - first:
-      213: -7809230435852570003
-    second: frame_001-Sheet_4
+      213: 2168491126659702453
+    second: Fire_4
   - first:
-      213: 7703684761649482893
-    second: frame_001-Sheet_5
+      213: 3081219861163341933
+    second: Fire_5
   - first:
-      213: -2509091216425630809
-    second: frame_001-Sheet_6
+      213: 519553080483729991
+    second: Fire_6
   - first:
-      213: 1474928844712383011
-    second: frame_001-Sheet_7
+      213: 964659150160153652
+    second: Fire_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -160,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frame_001-Sheet_0
+      name: Fire_0
       rect:
         serializedVersion: 2
         x: 14
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a4ba32e84167de50800000000000000
-      internalID: 6834037925219054756
+      spriteID: 7491445d795ed3f00800000000000000
+      internalID: 1098286324429101383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_1
+      name: Fire_1
       rect:
         serializedVersion: 2
         x: 77
@@ -197,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ae517c200fca7d10800000000000000
-      internalID: 2124237773911187110
+      spriteID: 2875941d14ea7f660800000000000000
+      internalID: 7419590508823533442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_2
+      name: Fire_2
       rect:
         serializedVersion: 2
         x: 138
@@ -219,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e051b4f687376bb80800000000000000
-      internalID: -8379383095575767794
+      spriteID: f4827aef1b6936020800000000000000
+      internalID: 2333874723133794383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_3
+      name: Fire_3
       rect:
         serializedVersion: 2
         x: 196
@@ -241,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c8ccea929dffdf60800000000000000
-      internalID: 8061440664122738888
+      spriteID: b32c67dd858023650800000000000000
+      internalID: 6211036013863027259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_4
+      name: Fire_4
       rect:
         serializedVersion: 2
         x: 257
@@ -263,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d62b6dd2b4a00a390800000000000000
-      internalID: -7809230435852570003
+      spriteID: 5be5327c037081e10800000000000000
+      internalID: 2168491126659702453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_5
+      name: Fire_5
       rect:
         serializedVersion: 2
         x: 316
@@ -285,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8c05bf897cf8ea60800000000000000
-      internalID: 7703684761649482893
+      spriteID: d68f4838321b2ca20800000000000000
+      internalID: 3081219861163341933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_6
+      name: Fire_6
       rect:
         serializedVersion: 2
         x: 377
@@ -307,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a3c5e715daed2dd0800000000000000
-      internalID: -2509091216425630809
+      spriteID: 742513426c2d53700800000000000000
+      internalID: 519553080483729991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: frame_001-Sheet_7
+      name: Fire_7
       rect:
         serializedVersion: 2
         x: 437
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3221f0248fff77410800000000000000
-      internalID: 1474928844712383011
+      spriteID: 43c40a6d268236d00800000000000000
+      internalID: 964659150160153652
       vertices: []
       indices: 
       edges: []
@@ -339,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9667e352bb86cad4c9b162a94fa302a3
+    spriteID: 532f4f84d3bba2747ad15b10f0ce18f2
     internalID: 0
     vertices: []
     indices: 
@@ -351,14 +351,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      frame_001-Sheet_0: 6834037925219054756
-      frame_001-Sheet_1: 2124237773911187110
-      frame_001-Sheet_2: -8379383095575767794
-      frame_001-Sheet_3: 8061440664122738888
-      frame_001-Sheet_4: -7809230435852570003
-      frame_001-Sheet_5: 7703684761649482893
-      frame_001-Sheet_6: -2509091216425630809
-      frame_001-Sheet_7: 1474928844712383011
+      Fire_0: 1098286324429101383
+      Fire_1: 7419590508823533442
+      Fire_2: 2333874723133794383
+      Fire_3: 6211036013863027259
+      Fire_4: 2168491126659702453
+      Fire_5: 3081219861163341933
+      Fire_6: 519553080483729991
+      Fire_7: 964659150160153652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

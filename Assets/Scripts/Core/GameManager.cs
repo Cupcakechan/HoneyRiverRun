@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     private const string HighScoreInitialsKey = "HighScoreInitials";
     private const string DefaultInitials = "AAA";
 
+    public int GatesPassed { get; private set; }
+    public event Action<int> OnGatePassed;
+
     public int HighScore { get; private set; }
     public string HighScoreInitials { get; private set; } = DefaultInitials;
 
@@ -40,6 +43,7 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;     // ensure we never start a run frozen
         Lives = startingLives;
+        GatesPassed = 0;
         State = GameState.Playing;
         OnLivesChanged?.Invoke(Lives);
     }
@@ -50,6 +54,13 @@ public class GameManager : MonoBehaviour
         Lives = Mathf.Max(0, Lives - 1);
         OnLivesChanged?.Invoke(Lives);
         return Lives > 0;
+    }
+
+    /// Called by a Honeycomb Gate when it's destroyed — banks a checkpoint.
+    public void RegisterGatePassed()
+    {
+        GatesPassed++;
+        OnGatePassed?.Invoke(GatesPassed);
     }
 
     /// True if this score beats the stored high score (does not save).

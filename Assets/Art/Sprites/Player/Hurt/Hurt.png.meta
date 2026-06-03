@@ -1,34 +1,22 @@
 fileFormatVersion: 2
-guid: 38e2202b9dffaea4cac794a2fae4ad1e
+guid: 337bc72dd39ffb5438415fee76ea0a7f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723902971875520500
-    second: dewath1_0
+      213: -2048800907179887802
+    second: Hurt_0
   - first:
-      213: -4321711145700339678
-    second: dewath1_1
+      213: 490842205202310979
+    second: Hurt_1
   - first:
-      213: -7206087911371458728
-    second: dewath1_2
+      213: -3720053754089064719
+    second: Hurt_2
   - first:
-      213: 7973780847070693715
-    second: dewath1_3
+      213: 5649970053243570431
+    second: Hurt_3
   - first:
-      213: -4432234792216661639
-    second: dewath1_4
-  - first:
-      213: -1171513643341985183
-    second: dewath1_5
-  - first:
-      213: -1119024649537499101
-    second: dewath1_6
-  - first:
-      213: 3287781003257520388
-    second: dewath1_7
-  - first:
-      213: 1009871942938539231
-    second: dewath1_8
+      213: -371187646486735994
+    second: Hurt_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,7 +87,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -163,199 +151,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dewath1_0
+      name: Hurt_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 16
-        width: 26
-        height: 27
+        x: 15
+        y: 15
+        width: 29
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ff6d0089bcae8140800000000000000
-      internalID: 4723902971875520500
+      spriteID: 6437b001e623193e0800000000000000
+      internalID: -2048800907179887802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dewath1_1
+      name: Hurt_1
       rect:
         serializedVersion: 2
-        x: 78
-        y: 18
-        width: 24
-        height: 27
+        x: 76
+        y: 15
+        width: 27
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2205fa24c923604c0800000000000000
-      internalID: -4321711145700339678
+      spriteID: 3476ad19262dfc600800000000000000
+      internalID: 490842205202310979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dewath1_2
+      name: Hurt_2
       rect:
         serializedVersion: 2
         x: 138
-        y: 20
-        width: 24
-        height: 27
+        y: 15
+        width: 23
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 857b77e5935defb90800000000000000
-      internalID: -7206087911371458728
+      spriteID: 1f6b92202d6bf5cc0800000000000000
+      internalID: -3720053754089064719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dewath1_3
+      name: Hurt_3
       rect:
         serializedVersion: 2
-        x: 200
-        y: 21
-        width: 19
+        x: 195
+        y: 15
+        width: 29
         height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 359467afe6f88ae60800000000000000
-      internalID: 7973780847070693715
+      spriteID: ff88d2f14d9b86e40800000000000000
+      internalID: 5649970053243570431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dewath1_4
+      name: Hurt_4
       rect:
         serializedVersion: 2
-        x: 251
-        y: 28
-        width: 37
-        height: 19
+        x: 255
+        y: 15
+        width: 29
+        height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9717cc080f98d72c0800000000000000
-      internalID: -4432234792216661639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dewath1_5
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 27
-        width: 41
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16ac31f5c82fdbfe0800000000000000
-      internalID: -1171513643341985183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dewath1_6
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 26
-        width: 43
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3205965920d6870f0800000000000000
-      internalID: -1119024649537499101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dewath1_7
-      rect:
-        serializedVersion: 2
-        x: 442
-        y: 25
-        width: 15
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 401217e276b80ad20800000000000000
-      internalID: 3287781003257520388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dewath1_8
-      rect:
-        serializedVersion: 2
-        x: 502
-        y: 26
-        width: 15
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fd43c7b7e29c30e00800000000000000
-      internalID: 1009871942938539231
+      spriteID: 683152a5dc649daf0800000000000000
+      internalID: -371187646486735994
       vertices: []
       indices: 
       edges: []
@@ -364,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0ab1d55c88c517c47adc3d286dfeb18b
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -372,19 +272,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      dewath1_0: 4723902971875520500
-      dewath1_1: -4321711145700339678
-      dewath1_2: -7206087911371458728
-      dewath1_3: 7973780847070693715
-      dewath1_4: -4432234792216661639
-      dewath1_5: -1171513643341985183
-      dewath1_6: -1119024649537499101
-      dewath1_7: 3287781003257520388
-      dewath1_8: 1009871942938539231
+      Hurt_0: -2048800907179887802
+      Hurt_1: 490842205202310979
+      Hurt_2: -3720053754089064719
+      Hurt_3: 5649970053243570431
+      Hurt_4: -371187646486735994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

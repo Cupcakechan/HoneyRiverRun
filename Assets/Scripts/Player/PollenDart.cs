@@ -16,10 +16,10 @@ public class PollenDart : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Wasp wasp = other.GetComponent<Wasp>();
-        if (wasp == null) return;
+        IDamageable target = other.GetComponent<IDamageable>();
+        if (target == null) return;
 
-        wasp.Hit();
+        target.TakeHit();
         gameObject.SetActive(false);   // consumed → back to the pool
     }
 }

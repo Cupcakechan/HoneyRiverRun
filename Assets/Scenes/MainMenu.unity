@@ -631,8 +631,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 7, y: 67}
-  m_SizeDelta: {x: 600, y: 328.2}
+  m_AnchoredPosition: {x: 16.3041, y: 67}
+  m_SizeDelta: {x: 618.6082, y: 328.2}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &328362636
 MonoBehaviour:
@@ -654,9 +654,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f1709a45682d96848901a97a130d9e79, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42a8a093711c9c24487c36368d566dfe, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -841,6 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692a14acb16ef584ebafc32f66c9535e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  startingLives: 3
 --- !u!1 &771209259
 GameObject:
   m_ObjectHideFlags: 0

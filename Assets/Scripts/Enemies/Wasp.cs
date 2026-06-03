@@ -6,7 +6,7 @@ public enum WaspMode { SouthDive, DriftEast, DriftWest, Static }
 /// One enemy Wasp. Configures itself on spawn (variant + position + animation),
 /// moves per its variant while the world scroll carries it down, kills Bumble on
 /// contact, and — when struck by a dart — flashes Hurt then returns to the pool.
-public class Wasp : MonoBehaviour, ISpawnable
+public class Wasp : MonoBehaviour, ISpawnable, IDamageable
 {
     [Header("Animator")]
     [SerializeField] private Animator animator;
@@ -79,7 +79,7 @@ public class Wasp : MonoBehaviour, ISpawnable
 
     /// Called by a Pollen Dart that strikes this Wasp.
    /// Called by a Pollen Dart that strikes this Wasp.
-    public void Hit()
+    public void TakeHit()
     {
         if (isHit) return;
         isHit = true;                        // harmless from this instant

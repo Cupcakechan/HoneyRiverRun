@@ -1296,6 +1296,54 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.2308636, y: 25.011757}
   m_EdgeRadius: 0
+--- !u!1 &582425210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582425212}
+  - component: {fileID: 582425211}
+  m_Layer: 0
+  m_Name: Gate Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &582425211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582425210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bc5558ea6d50448aa03939482aae13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GateSpawner
+  gatePrefab: {fileID: 7276614871611040280, guid: 5819d1e48a4319445982a08d1551c571, type: 3}
+  poolSize: 2
+  firstGateDistance: 25
+  sectionDistance: 40
+--- !u!4 &582425212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582425210}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &656419370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,7 +4655,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6834037925219054756, guid: c707aad17361b4c4eb9aefa5b3c1cb80, type: 3}
+  m_Sprite: {fileID: -427066485589525634, guid: fc16ec364cc503249a63f549e51d532c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4626,7 +4674,7 @@ Transform:
   m_GameObject: {fileID: 1439639398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.702, z: 0}
+  m_LocalPosition: {x: -0.08, y: -3.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7302,3 +7350,4 @@ SceneRoots:
   - {fileID: 979509570}
   - {fileID: 435606694}
   - {fileID: 2128837811}
+  - {fileID: 582425212}
