@@ -825,7 +825,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RiverStreamer
   wideSection: {fileID: 7443884912277432685, guid: 2da1cd3791425be4983d355163a3c91f, type: 3}
+  taperInSection: {fileID: 7443884912277432685, guid: 7ba3ccf84213e5e448a4b0bc1bb68414, type: 3}
+  checkpointSection: {fileID: 7443884912277432685, guid: 6b03fc921725ac14388864499abb3c61, type: 3}
+  taperOutSection: {fileID: 7443884912277432685, guid: a5d7a1b3564853149a78e4d67f92bee6, type: 3}
   sectionHeight: 10
+  checkpointSpacing: 500
+  firstCheckpointAt: 80
   fillToY: 6
   recycleBelowY: -6
   startBottomY: -6
