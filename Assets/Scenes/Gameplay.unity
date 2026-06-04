@@ -1140,8 +1140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   prefab: {fileID: 2617667743416950051, guid: a960189d09b86bc4fad06cdcc273a53e, type: 3}
   poolSize: 5
-  minInterval: 4
-  maxInterval: 7
+  minInterval: 2
+  maxInterval: 5
   rateChannel: 2
 --- !u!1 &734520616
 GameObject:
@@ -2023,7 +2023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1361036335
 MonoBehaviour:
   m_ObjectHideFlags: 0

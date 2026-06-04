@@ -127,7 +127,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 7276614871611040280}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
@@ -188,7 +188,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10, y: 1}
+  m_Size: {x: 4, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &573765577571439024
 MonoBehaviour:
@@ -206,6 +206,4 @@ MonoBehaviour:
   destroyAnimLength: 0.8
   maxHits: 2
   scoreValue: 500
-  topY: 7
-  despawnY: -8
   bodyCollider: {fileID: 147645215561183232}
