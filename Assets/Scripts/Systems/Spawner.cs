@@ -1,16 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// Which difficulty lever this spawner's rate follows.
 public enum SpawnRateChannel { None, Enemy, Orb, Island }
 
-/// Generic, reusable pooled spawner. Activates a pooled instance on a randomized
-/// interval and calls OnSpawned(). The interval scales with difficulty based on its
-/// SpawnRateChannel, so new enemy spawners inherit difficulty with no other changes.
+/// Generic pooled spawner. Activates a pooled instance on a randomized interval
+/// (scaled by difficulty) and calls OnSpawned(). Pauses while the river is in a
+/// narrow checkpoint stretch so nothing spawns into the grass.
 public class Spawner : MonoBehaviour
 {
     [Header("Prefab & Pool")]
-    [SerializeField] private GameObject prefab;     // must implement ISpawnable
+    [SerializeField] private GameObject prefab;
     [SerializeField] private int poolSize = 12;
 
     [Header("Timing (seconds between spawns)")]
@@ -19,6 +18,10 @@ public class Spawner : MonoBehaviour
 
     [Header("Difficulty")]
     [SerializeField] private SpawnRateChannel rateChannel = SpawnRateChannel.None;
+
+    [Header("Checkpoint")]
+    [Tooltip("Skip spawning while the river is in a narrow taper/checkpoint stretch.")]
+    [SerializeField] private bool pauseDuringCheckpoint = true;
 
     private readonly List<GameObject> pool = new();
     private float timer;
@@ -39,24 +42,27 @@ public class Spawner : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer > 0f) return;
 
+        timer = NextInterval();   // reset every cycle so spawns never "stack up"
+
+        if (pauseDuringCheckpoint && RiverState.InCheckpointStretch) return;
+
         SpawnOne();
-        timer = NextInterval();
     }
 
     private float NextInterval()
     {
         float baseInterval = Random.Range(minInterval, maxInterval);
-        return baseInterval / Mathf.Max(0.01f, RateMultiplier());   // higher multiplier = sooner
+        return baseInterval / Mathf.Max(0.01f, RateMultiplier());
     }
 
     private float RateMultiplier()
     {
         switch (rateChannel)
         {
-            case SpawnRateChannel.Enemy: return Difficulty.EnemyRateMultiplier;
-            case SpawnRateChannel.Orb:   return Difficulty.OrbRateMultiplier;
+            case SpawnRateChannel.Enemy:  return Difficulty.EnemyRateMultiplier;
+            case SpawnRateChannel.Orb:    return Difficulty.OrbRateMultiplier;
             case SpawnRateChannel.Island: return Difficulty.IslandRateMultiplier;
-            default:                     return 1f;
+            default:                      return 1f;
         }
     }
 
