@@ -41,10 +41,11 @@ public class AudioManager : MonoBehaviour
         if (musicSource != null) musicSource.Stop();
     }
 
-    public void PlaySfx(AudioClip clip)
+    /// Fire a one-shot SFX. volumeScale (0..1) lets a caller play quieter/louder.
+    public void PlaySfx(AudioClip clip, float volumeScale = 1f)
     {
         if (clip == null || sfxSource == null) return;
-        sfxSource.PlayOneShot(clip);
+        sfxSource.PlayOneShot(clip, volumeScale);
     }
 
     // ── UI helpers ──

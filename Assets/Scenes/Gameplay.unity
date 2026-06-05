@@ -1914,6 +1914,7 @@ MonoBehaviour:
   animator: {fileID: 1439639403}
   fireAnimLength: 0.2
   fireClip: {fileID: 8300000, guid: 55748f6f70f9a9041940d10e1aa2fa2d, type: 3}
+  fireVolume: 0.105
 --- !u!1 &1279679185
 GameObject:
   m_ObjectHideFlags: 0

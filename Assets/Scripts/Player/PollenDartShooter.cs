@@ -18,7 +18,8 @@ public class PollenDartShooter : MonoBehaviour
     [SerializeField] private float fireCooldown = 0.2f;     // seconds between darts (gameplay rate)
     [SerializeField] private Animator animator;
     [SerializeField] private float fireAnimLength = 0.8f;   // your Fire clip length (8 frames @ 10 fps)
-    [SerializeField] private AudioClip fireClip;   // pollen dart shot sound
+    [SerializeField] private AudioClip fireClip;                 // (existing)
+    [Range(0f, 1f)] [SerializeField] private float fireVolume = 0.5f;   // NEW
     private readonly List<PollenDart> pool = new();
     private float cooldownTimer;
     private float animHoldTimer;
@@ -64,7 +65,7 @@ public class PollenDartShooter : MonoBehaviour
         PollenDart dart = GetPooledDart();
         dart.transform.SetPositionAndRotation(muzzle.position, Quaternion.identity);
         dart.gameObject.SetActive(true);
-        AudioManager.Instance?.PlaySfx(fireClip);   // NEW
+        AudioManager.Instance?.PlaySfx(fireClip, fireVolume);   // was PlaySfx(fireClip)   // NEW
     }
 
     // ── KEEP ──
