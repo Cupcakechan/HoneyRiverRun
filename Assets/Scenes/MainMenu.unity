@@ -335,6 +335,7 @@ GameObject:
   - component: {fileID: 108764787}
   - component: {fileID: 108764786}
   - component: {fileID: 108764785}
+  - component: {fileID: 108764788}
   m_Layer: 5
   m_Name: 'HowToPlayButton '
   m_TagString: Untagged
@@ -359,7 +360,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 21, y: -66.8}
+  m_AnchoredPosition: {x: 20, y: -66.8}
   m_SizeDelta: {x: 398.4, y: 52.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108764785
@@ -456,6 +457,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108764783}
   m_CullTransparentMesh: 1
+--- !u!114 &108764788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108764783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
 --- !u!1 &143041458
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +481,7 @@ GameObject:
   - component: {fileID: 143041462}
   - component: {fileID: 143041461}
   - component: {fileID: 143041460}
+  - component: {fileID: 143041463}
   m_Layer: 5
   m_Name: 'PlayButton '
   m_TagString: Untagged
@@ -589,6 +603,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143041458}
   m_CullTransparentMesh: 1
+--- !u!114 &143041463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143041458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
 --- !u!1 &237870438
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,8 +783,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   musicSource: {fileID: 533699427}
   sfxSource: {fileID: 88521087}
-  musicVolume: 0.6
-  sfxVolume: 1
+  musicVolume: 0.1
+  sfxVolume: 0.4
+  uiHover: {fileID: 0}
+  uiClick: {fileID: 8300000, guid: b8c5ab28330526e4ba136a80c5cf12ae, type: 3}
 --- !u!4 &312899740
 Transform:
   m_ObjectHideFlags: 0
@@ -1005,7 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab3eb58acf8a9f469fe10e90f9d57d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MusicCue
-  track: {fileID: 0}
+  track: {fileID: 8300000, guid: cf6e16ebfdeaca14ba110fd79622c824, type: 3}
 --- !u!4 &435461984
 Transform:
   m_ObjectHideFlags: 0
@@ -1573,6 +1601,7 @@ GameObject:
   - component: {fileID: 952345329}
   - component: {fileID: 952345328}
   - component: {fileID: 952345327}
+  - component: {fileID: 952345330}
   m_Layer: 5
   m_Name: 'HighScoresButton '
   m_TagString: Untagged
@@ -1694,6 +1723,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952345325}
   m_CullTransparentMesh: 1
+--- !u!114 &952345330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952345325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
 --- !u!1 &1189831311
 GameObject:
   m_ObjectHideFlags: 0
