@@ -41,6 +41,7 @@ public class RiverStreamer : MonoBehaviour
         }
 
         RiverState.InCheckpointStretch = false;
+        SpawnTraffic.Clear();   // fresh spawn-spacing record each run
         nextCheckpointAt = firstCheckpointAt;
         stackTopY = startBottomY;
         FillUp();

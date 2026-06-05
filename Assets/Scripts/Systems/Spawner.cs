@@ -4,8 +4,8 @@ using UnityEngine;
 public enum SpawnRateChannel { None, Enemy, Orb, Island }
 
 /// Generic pooled spawner. Activates a pooled instance on a randomized interval
-/// (scaled by difficulty) and calls OnSpawned(). Pauses while the river is in a
-/// narrow checkpoint stretch so nothing spawns into the grass.
+/// (scaled by difficulty) and calls OnSpawned(). Pauses while the river is narrow,
+/// and avoids dropping objects on top of recent spawns (shared via SpawnTraffic).
 public class Spawner : MonoBehaviour
 {
     [Header("Prefab & Pool")]
@@ -22,6 +22,16 @@ public class Spawner : MonoBehaviour
     [Header("Checkpoint")]
     [Tooltip("Skip spawning while the river is in a narrow taper/checkpoint stretch.")]
     [SerializeField] private bool pauseDuringCheckpoint = true;
+
+    [Header("Overlap avoidance")]
+    [Tooltip("Re-roll (then skip) a spawn that lands too close to another recent spawn.")]
+    [SerializeField] private bool avoidOverlap = true;
+    [Tooltip("Minimum world-unit distance between spawns.")]
+    [SerializeField] private float minSpawnGap = 2f;
+    [Tooltip("How many positions to try before giving up this spawn.")]
+    [SerializeField] private int placementTries = 4;
+    [Tooltip("How long a spawn reserves its spot (seconds).")]
+    [SerializeField] private float overlapHoldSeconds = 1.2f;
 
     private readonly List<GameObject> pool = new();
     private float timer;
@@ -42,7 +52,7 @@ public class Spawner : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer > 0f) return;
 
-        timer = NextInterval();   // reset every cycle so spawns never "stack up"
+        timer = NextInterval();
 
         if (pauseDuringCheckpoint && RiverState.InCheckpointStretch) return;
 
@@ -70,7 +80,24 @@ public class Spawner : MonoBehaviour
     {
         GameObject obj = GetInactive();
         obj.SetActive(true);
-        obj.GetComponent<ISpawnable>()?.OnSpawned();
+
+        ISpawnable spawnable = obj.GetComponent<ISpawnable>();
+
+        for (int attempt = 0; attempt < placementTries; attempt++)
+        {
+            spawnable?.OnSpawned();   // positions (and randomizes) the object
+
+            if (!avoidOverlap) return;   // avoidance off → accept first placement
+
+            Vector2 pos = obj.transform.position;
+            if (SpawnTraffic.IsClear(pos, minSpawnGap))
+            {
+                SpawnTraffic.Register(pos, overlapHoldSeconds);
+                return;
+            }
+        }
+
+        obj.SetActive(false);   // no clear spot found → skip this spawn
     }
 
     private GameObject GetInactive()
