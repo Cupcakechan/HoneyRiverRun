@@ -1,62 +1,61 @@
 using System.Collections;
 using UnityEngine;
 
-/// A Honeycomb Gate baked into the Checkpoint section. Lethal on contact until
-/// destroyed; takes several dart hits, then plays its destruction animation, banks
-/// a checkpoint (which ramps difficulty), awards points, and hides itself.
-/// It rides with its parent section's scroll - it does NOT move itself.
+/// A Honeycomb Gate baked into the Checkpoint section. Non-lethal: the player can
+/// either shoot it down with darts OR simply fly through it — either way it collapses,
+/// banks a checkpoint (ramping difficulty), awards points, and hides. It rides with
+/// its parent section's scroll - it does NOT move itself.
 public class HoneycombGate : MonoBehaviour, IDamageable
 {
     [Header("Animator")]
     [SerializeField] private Animator animator;
-    [SerializeField] private float destroyAnimLength = 0.8f;   // your Destroy clip length
+    [SerializeField] private float destroyAnimLength = 0.8f;
 
-    [Header("Health")]
+    [Header("Health (dart hits to pop it early)")]
     [SerializeField] private int maxHits = 2;
 
     [Header("Scoring")]
-    [SerializeField] private int scoreValue = 500;   // GDD §11: gate = 500
+    [SerializeField] private int scoreValue = 500;
 
     [Header("Collider")]
-    [SerializeField] private Collider2D bodyCollider; // disabled once destroyed
+    [SerializeField] private Collider2D bodyCollider;
 
     [Header("Audio")]
     [SerializeField] private AudioClip destroyClip;
 
     private int hitsRemaining;
-    private bool isDestroyed;
+    private bool isCollapsed;
 
-    // Fresh instance each checkpoint (the streamer instantiates a new section),
-    // so initialising in Start resets it automatically.
     private void Start()
     {
         hitsRemaining = maxHits;
-        isDestroyed = false;
+        isCollapsed = false;
         if (bodyCollider != null) bodyCollider.enabled = true;
         if (animator != null) animator.Play("Intact");
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    // Flying through it (the player clears the gate) collapses it — no damage.
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (isDestroyed) return;
-        PlayerHealth player = other.GetComponent<PlayerHealth>();
-        if (player != null) player.Die();   // contact kills until the gate is destroyed
+        if (isCollapsed) return;
+        if (other.GetComponent<PlayerHealth>() != null)
+            Collapse();
     }
 
-    // ── IDamageable: a Pollen Dart struck the gate ──
+    // IDamageable: darts can pop it early.
     public void TakeHit()
     {
-        if (isDestroyed) return;
+        if (isCollapsed) return;
         hitsRemaining--;
-        if (hitsRemaining <= 0) Demolish();
+        if (hitsRemaining <= 0) Collapse();
     }
 
-    private void Demolish()
+    private void Collapse()
     {
-        isDestroyed = true;
+        isCollapsed = true;
         if (bodyCollider != null) bodyCollider.enabled = false;
 
-        AudioManager.Instance?.PlaySfx(destroyClip);    // NEW
+        AudioManager.Instance?.PlaySfx(destroyClip);
         ScoreManager.Instance?.AddScore(scoreValue);
         if (GameManager.Instance != null) GameManager.Instance.RegisterGatePassed();
 
@@ -67,6 +66,6 @@ public class HoneycombGate : MonoBehaviour, IDamageable
     private IEnumerator HideAfterAnim()
     {
         yield return new WaitForSeconds(destroyAnimLength);
-        gameObject.SetActive(false);   // hide; the section recycles the rest
+        gameObject.SetActive(false);
     }
 }
