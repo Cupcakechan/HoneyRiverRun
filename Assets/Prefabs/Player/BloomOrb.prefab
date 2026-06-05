@@ -173,3 +173,4 @@ MonoBehaviour:
   despawnY: -7
   minX: -4
   maxX: 4
+  pickupClip: {fileID: 8300000, guid: e8954462bbfffcf4691842b531cd7479, type: 3}

@@ -12,6 +12,7 @@ public class BloomOrb : MonoBehaviour, ISpawnable
     [SerializeField] private float minX = -4f;     // keep inside the river channel
     [SerializeField] private float maxX = 4f;
 
+    [SerializeField] private AudioClip pickupClip;   // refuel chime
     public void OnSpawned()
     {
         transform.position = new Vector3(Random.Range(minX, maxX), topY, transform.position.z);
@@ -30,6 +31,7 @@ public class BloomOrb : MonoBehaviour, ISpawnable
         if (tank == null) return;
 
         tank.Refuel();
-        gameObject.SetActive(false);   // consumed → back to the pool
+        AudioManager.Instance?.PlaySfx(pickupClip);   // NEW
+        gameObject.SetActive(false);
     }
 }
