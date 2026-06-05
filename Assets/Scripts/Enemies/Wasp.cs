@@ -36,6 +36,9 @@ public class Wasp : MonoBehaviour, ISpawnable, IDamageable
 
     [Header("Scoring")]
     [SerializeField] private int scoreValue = 40;   // GDD §11: Wasp = 40   
+    
+    [Header("Audio")]
+    [SerializeField] private AudioClip hitClip;   // struck by a dart
 
     private WaspMode mode;
     private bool isHit;
@@ -84,7 +87,8 @@ public class Wasp : MonoBehaviour, ISpawnable, IDamageable
         if (isHit) return;
         isHit = true;                        // harmless from this instant
 
-        ScoreManager.Instance?.AddScore(scoreValue);   // award points for the kill
+        AudioManager.Instance?.PlaySfx(hitClip);        // NEW
+        ScoreManager.Instance?.AddScore(scoreValue);    // award points for the kill
 
         if (animator) animator.Play("Hurt");
         StartCoroutine(HurtThenDespawn());

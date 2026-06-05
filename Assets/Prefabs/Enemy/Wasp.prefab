@@ -209,3 +209,4 @@ MonoBehaviour:
   weightWest: 0.2
   weightStatic: 0.2
   scoreValue: 40
+  hitClip: {fileID: 8300000, guid: 267bdd20708e99a4c9bc23867d5c7f9a, type: 3}
