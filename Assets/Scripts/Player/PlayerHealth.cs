@@ -23,6 +23,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float invulnDuration = 1.5f;
     [SerializeField] private float blinkInterval = 0.15f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip deathClip;
+
     [Header("Bank Re-check")]
 
     [Tooltip("Bumble's own Collider2D — used to re-test wall overlap when invulnerability ends. Auto-grabbed if left empty.")]
@@ -73,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
         bool stillAlive = GameManager.Instance == null || GameManager.Instance.LoseLife();
 
         if (animator) animator.SetTrigger("Death");
+        AudioManager.Instance?.PlaySfx(deathClip);   // NEW
         yield return new WaitForSeconds(deathAnimLength);
 
         if (!stillAlive)

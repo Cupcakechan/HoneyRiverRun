@@ -2558,6 +2558,7 @@ MonoBehaviour:
   respawnPosition: {x: 0, y: -3.5}
   invulnDuration: 1.5
   blinkInterval: 0.15
+  deathClip: {fileID: 8300000, guid: 07c87a20072bd9d4f82f6d60baaaeb9d, type: 3}
   bodyCollider: {fileID: 1439639401}
 --- !u!114 &1439639407
 MonoBehaviour:

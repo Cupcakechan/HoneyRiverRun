@@ -207,3 +207,4 @@ MonoBehaviour:
   maxHits: 2
   scoreValue: 500
   bodyCollider: {fileID: 147645215561183232}
+  destroyClip: {fileID: 8300000, guid: a20bd354e634ed14dbdc80efebbaef3d, type: 3}

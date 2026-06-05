@@ -20,6 +20,9 @@ public class HoneycombGate : MonoBehaviour, IDamageable
     [Header("Collider")]
     [SerializeField] private Collider2D bodyCollider; // disabled once destroyed
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip destroyClip;
+
     private int hitsRemaining;
     private bool isDestroyed;
 
@@ -51,8 +54,9 @@ public class HoneycombGate : MonoBehaviour, IDamageable
     private void Demolish()
     {
         isDestroyed = true;
-        if (bodyCollider != null) bodyCollider.enabled = false;   // no more contact or hits
+        if (bodyCollider != null) bodyCollider.enabled = false;
 
+        AudioManager.Instance?.PlaySfx(destroyClip);    // NEW
         ScoreManager.Instance?.AddScore(scoreValue);
         if (GameManager.Instance != null) GameManager.Instance.RegisterGatePassed();
 
