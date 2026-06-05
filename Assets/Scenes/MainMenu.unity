@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 108764786}
   - component: {fileID: 108764785}
   - component: {fileID: 108764788}
+  - component: {fileID: 108764789}
   m_Layer: 5
   m_Name: 'HowToPlayButton '
   m_TagString: Untagged
@@ -469,6 +470,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &108764789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108764783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &143041458
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +498,7 @@ GameObject:
   - component: {fileID: 143041461}
   - component: {fileID: 143041460}
   - component: {fileID: 143041463}
+  - component: {fileID: 143041464}
   m_Layer: 5
   m_Name: 'PlayButton '
   m_TagString: Untagged
@@ -615,6 +632,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &143041464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143041458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &237870438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,6 +1634,7 @@ GameObject:
   - component: {fileID: 952345328}
   - component: {fileID: 952345327}
   - component: {fileID: 952345330}
+  - component: {fileID: 952345331}
   m_Layer: 5
   m_Name: 'HighScoresButton '
   m_TagString: Untagged
@@ -1735,6 +1768,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &952345331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952345325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &1189831311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,6 +1795,8 @@ GameObject:
   - component: {fileID: 1189831315}
   - component: {fileID: 1189831314}
   - component: {fileID: 1189831313}
+  - component: {fileID: 1189831317}
+  - component: {fileID: 1189831316}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1868,6 +1918,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189831311}
   m_CullTransparentMesh: 1
+--- !u!114 &1189831316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189831311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &1189831317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189831311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &1429197066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,6 +2203,8 @@ GameObject:
   - component: {fileID: 1647516913}
   - component: {fileID: 1647516912}
   - component: {fileID: 1647516911}
+  - component: {fileID: 1647516915}
+  - component: {fileID: 1647516914}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -2247,6 +2326,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647516909}
   m_CullTransparentMesh: 1
+--- !u!114 &1647516914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647516909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &1647516915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647516909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &1735429877
 GameObject:
   m_ObjectHideFlags: 0

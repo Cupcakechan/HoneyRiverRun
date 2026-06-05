@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 144798160}
   - component: {fileID: 144798159}
   - component: {fileID: 144798162}
+  - component: {fileID: 144798163}
   m_Layer: 5
   m_Name: RetryButton
   m_TagString: Untagged
@@ -265,6 +266,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &144798163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144798157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &226464556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,6 +1149,7 @@ GameObject:
   - component: {fileID: 734520619}
   - component: {fileID: 734520618}
   - component: {fileID: 734520621}
+  - component: {fileID: 734520622}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -1266,6 +1283,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &734520622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734520616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &763179041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1311,7 @@ GameObject:
   - component: {fileID: 763179044}
   - component: {fileID: 763179043}
   - component: {fileID: 763179046}
+  - component: {fileID: 763179047}
   m_Layer: 5
   m_Name: SubmitButton
   m_TagString: Untagged
@@ -1412,6 +1445,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &763179047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763179041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &809481049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,6 +3491,7 @@ GameObject:
   - component: {fileID: 1815906126}
   - component: {fileID: 1815906125}
   - component: {fileID: 1815906128}
+  - component: {fileID: 1815906129}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -3576,6 +3625,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &1815906129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815906123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &1882096754
 GameObject:
   m_ObjectHideFlags: 0
@@ -3899,6 +3963,7 @@ GameObject:
   - component: {fileID: 1941769176}
   - component: {fileID: 1941769175}
   - component: {fileID: 1941769178}
+  - component: {fileID: 1941769179}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -4032,6 +4097,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &1941769179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941769173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &1992905656
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,6 +4125,7 @@ GameObject:
   - component: {fileID: 1992905659}
   - component: {fileID: 1992905658}
   - component: {fileID: 1992905661}
+  - component: {fileID: 1992905662}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -4178,6 +4259,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41a72b618ed12da4a98a34547b935ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonSound
+--- !u!114 &1992905662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992905656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f2fa2419d297df4aade17aa800e0c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonJuice
+  pressedScale: 0.9
+  speed: 16
+  submitPulse: 0.1
 --- !u!1 &2034757350
 GameObject:
   m_ObjectHideFlags: 0
