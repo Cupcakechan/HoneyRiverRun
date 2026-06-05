@@ -15,7 +15,8 @@ public class Wasp : MonoBehaviour, ISpawnable, IDamageable
     [Header("Movement")]
     [SerializeField] private float diveBonusSpeed = 2.5f;   // extra downward for SouthDive
     [SerializeField] private float driftSpeed = 2.5f;       // horizontal speed for E/W
-
+    [SerializeField] private float selfDescendSpeed = 1f;   // independent downward speed, scaled by Difficulty.EnemySpeedMultiplier
+    
     [Header("Spawn placement")]
     [SerializeField] private float topY = 6.5f;             // above the view (south/static)
     [SerializeField] private float channelMinX = -4f;       // top-spawn x range
@@ -53,25 +54,28 @@ public class Wasp : MonoBehaviour, ISpawnable, IDamageable
     }
 
     private void Update()
+{
+    if (isHit) return;
+
+    Vector3 p = transform.position;
+    // river carry + an INDEPENDENT descent (scaled by difficulty) so wasps stay
+    // dangerous even when the player throttles the river slow
+    float independentDescent = selfDescendSpeed * Difficulty.EnemySpeedMultiplier;
+    p.y -= (WorldScroll.Speed + independentDescent) * Time.deltaTime;
+
+    switch (mode)
     {
-        if (isHit) return;
-
-        Vector3 p = transform.position;
-        p.y -= WorldScroll.Speed * Time.deltaTime;   // carried down by the river
-
-        switch (mode)
-        {
-            case WaspMode.SouthDive: p.y -= diveBonusSpeed * Time.deltaTime; break;
-            case WaspMode.DriftEast: p.x += driftSpeed * Time.deltaTime;     break;
-            case WaspMode.DriftWest: p.x -= driftSpeed * Time.deltaTime;     break;
-            case WaspMode.Static:                                            break;
-        }
-
-        transform.position = p;
-
-        if (p.y < despawnY || p.x < -despawnX || p.x > despawnX)
-            gameObject.SetActive(false);   // off-screen → back to the pool
+        case WaspMode.SouthDive: p.y -= diveBonusSpeed * Time.deltaTime; break;
+        case WaspMode.DriftEast: p.x += driftSpeed * Time.deltaTime;     break;
+        case WaspMode.DriftWest: p.x -= driftSpeed * Time.deltaTime;     break;
+        case WaspMode.Static:                                            break;
     }
+
+    transform.position = p;
+
+    if (p.y < despawnY || p.x < -despawnX || p.x > despawnX)
+        gameObject.SetActive(false);   // off-screen → back to the pool
+}
 
     private void OnTriggerEnter2D(Collider2D other)
     {

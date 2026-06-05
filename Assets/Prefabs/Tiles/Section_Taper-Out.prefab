@@ -427,8 +427,8 @@ Tilemap:
   - first: {x: -3, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 12
-      m_TileSpriteIndex: 12
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -477,8 +477,8 @@ Tilemap:
   - first: {x: 2, y: -5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 10
-      m_TileSpriteIndex: 10
+      m_TileIndex: 11
+      m_TileSpriteIndex: 11
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2360,7 +2360,7 @@ Tilemap:
     m_RefCount: 10
     m_Data: {fileID: 11400000, guid: a873d56784f6d4d46b29f901858e7f76, type: 2}
   - serializedVersion: 2
-    m_RefCount: 3
+    m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 5b4a3abb31481b240acbf17ba6ad52d3, type: 2}
   - serializedVersion: 2
     m_RefCount: 54
@@ -2387,13 +2387,13 @@ Tilemap:
     m_RefCount: 13
     m_Data: {fileID: 11400000, guid: 3a5b49b366fc4e24fb5d81ae66b2a0fe, type: 2}
   - serializedVersion: 2
-    m_RefCount: 1
+    m_RefCount: 0
     m_Data: {fileID: 11400000, guid: edd4202346c33ab45acf6aecd85fef6d, type: 2}
   - serializedVersion: 2
-    m_RefCount: 3
+    m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 5b08cc20b3b087d4bbcc232db1e9814a, type: 2}
   - serializedVersion: 2
-    m_RefCount: 1
+    m_RefCount: 0
     m_Data: {fileID: 11400000, guid: ed8597cba14cbbd4b9d55b31690c931a, type: 2}
   - serializedVersion: 2
     m_RefCount: 2
@@ -2424,7 +2424,7 @@ Tilemap:
     m_RefCount: 10
     m_Data: {fileID: 1493759181, guid: 77d8f3e2d7b04064586ff9dbd90ceb4a, type: 3}
   - serializedVersion: 2
-    m_RefCount: 3
+    m_RefCount: 4
     m_Data: {fileID: -752746652, guid: 41e452c3269f0474ab8b1877eaaf26a0, type: 3}
   - serializedVersion: 2
     m_RefCount: 54
@@ -2451,13 +2451,13 @@ Tilemap:
     m_RefCount: 13
     m_Data: {fileID: 1108129989, guid: 77d8f3e2d7b04064586ff9dbd90ceb4a, type: 3}
   - serializedVersion: 2
-    m_RefCount: 1
+    m_RefCount: 0
     m_Data: {fileID: 1529870613240822220, guid: 41e452c3269f0474ab8b1877eaaf26a0, type: 3}
   - serializedVersion: 2
-    m_RefCount: 3
+    m_RefCount: 4
     m_Data: {fileID: -629222680, guid: 41e452c3269f0474ab8b1877eaaf26a0, type: 3}
   - serializedVersion: 2
-    m_RefCount: 1
+    m_RefCount: 0
     m_Data: {fileID: 798417156691996845, guid: 41e452c3269f0474ab8b1877eaaf26a0, type: 3}
   - serializedVersion: 2
     m_RefCount: 2

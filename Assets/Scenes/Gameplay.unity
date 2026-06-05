@@ -865,8 +865,8 @@ MonoBehaviour:
   checkpointSection: {fileID: 7443884912277432685, guid: 6b03fc921725ac14388864499abb3c61, type: 3}
   taperOutSection: {fileID: 7443884912277432685, guid: a5d7a1b3564853149a78e4d67f92bee6, type: 3}
   sectionHeight: 10
-  checkpointSpacing: 500
-  firstCheckpointAt: 80
+  checkpointSpacing: 150
+  firstCheckpointAt: 60
   fillToY: 6
   recycleBelowY: -6
   startBottomY: -6
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   prefab: {fileID: 140859610126656614, guid: 6e320abe10bf1af4fb5f1a23581df33d, type: 3}
-  poolSize: 12
+  poolSize: 4
   minInterval: 9
   maxInterval: 15
   rateChannel: 3
@@ -9354,11 +9354,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyManager
   scrollStep: 0.06
   enemyRateStep: 0.15
+  enemySpeedStep: 0.2
   orbRateStep: 0.1
+  islandRateStep: 0.18
   maxScroll: 1.8
   maxEnemyRate: 2.5
+  maxEnemySpeed: 4
   minOrbRate: 0.45
-  islandRateStep: 0.18
   maxIslandRate: 2.2
 --- !u!4 &2093838749
 Transform:
