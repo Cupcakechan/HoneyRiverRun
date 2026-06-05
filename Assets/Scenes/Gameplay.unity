@@ -326,6 +326,8 @@ MonoBehaviour:
   initialsGroup: {fileID: 1055653027}
   initialsInput: {fileID: 327603976}
   navGroup: {fileID: 1173873769}
+  gameOverMusic: {fileID: 8300000, guid: c93c50e79ff6bbb42a0df8885571de73, type: 3}
+  loopGameOverMusic: 1
 --- !u!114 &226464559
 MonoBehaviour:
   m_ObjectHideFlags: 0

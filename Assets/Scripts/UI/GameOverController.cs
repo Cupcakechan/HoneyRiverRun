@@ -20,6 +20,9 @@ public class GameOverController : MonoBehaviour
     [Header("Navigation")]
     [SerializeField] private GameObject navGroup;         // Retry + Menu buttons
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip gameOverMusic;
+    [SerializeField] private bool loopGameOverMusic = true; 
     private int finalScore;
 
     /// Called by PlayerHealth when the last life is spent.
@@ -31,6 +34,8 @@ public class GameOverController : MonoBehaviour
             GameManager.Instance.SetState(GameState.GameOver);
 
         Time.timeScale = 0f;                 // freeze the world behind the overlay
+        if (AudioManager.Instance != null)
+            AudioManager.Instance.PlayMusic(gameOverMusic, loopGameOverMusic);   // NEW
         if (panel != null) panel.SetActive(true);
 
         if (finalScoreText != null)

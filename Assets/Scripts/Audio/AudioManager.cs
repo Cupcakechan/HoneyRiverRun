@@ -28,10 +28,11 @@ public class AudioManager : MonoBehaviour
         if (sfxSource != null)   { sfxSource.loop = false; sfxSource.volume = sfxVolume; }
     }
 
-    public void PlayMusic(AudioClip clip)
+    public void PlayMusic(AudioClip clip, bool loop = true)
     {
         if (clip == null || musicSource == null) return;
         if (musicSource.clip == clip && musicSource.isPlaying) return;
+        musicSource.loop = loop;
         musicSource.clip = clip;
         musicSource.Play();
     }
