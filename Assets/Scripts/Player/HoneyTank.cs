@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 
-/// Captain Bumble's honey tank. Drains continuously; refilled by flying over Bloom Orbs.
-/// Fires events so the UI (and the Phase 10 HUD) can react without the tank knowing about them.
+/// Captain Bumble's honey tank. Drains continuously; refilled by flying over Bloom
+/// Orbs, and topped back to full each time a checkpoint (Honeycomb Gate) is passed.
 public class HoneyTank : MonoBehaviour
 {
     [Header("Tank")]
@@ -28,6 +28,18 @@ public class HoneyTank : MonoBehaviour
     private void Awake() => Current = maxFuel;
     private void Start() => RaiseChanged();   // broadcast the starting full tank
 
+    private void OnEnable()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnGatePassed += HandleGatePassed;
+    }
+
+    private void OnDisable()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.OnGatePassed -= HandleGatePassed;
+    }
+
     private void Update()
     {
         if (isEmpty) return;
@@ -52,13 +64,16 @@ public class HoneyTank : MonoBehaviour
         RaiseChanged();
     }
 
-    /// Reset to full (called on respawn).
+    /// Reset to full (called on respawn and on each checkpoint passed).
     public void Refill()
     {
         Current = maxFuel;
         isEmpty = false;
         RaiseChanged();
     }
+
+    /// Each Honeycomb Gate passed tops the tank back to full.
+    private void HandleGatePassed(int gatesPassed) => Refill();
 
     private void RaiseChanged() => OnFuelChanged?.Invoke(Fraction, IsLow);
 }

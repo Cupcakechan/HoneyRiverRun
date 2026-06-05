@@ -463,8 +463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   prefab: {fileID: 3138257241490410964, guid: 2b3972d024379eb499107989af02931b, type: 3}
   poolSize: 12
-  minInterval: 1.5
-  maxInterval: 2.5
+  minInterval: 3.5
+  maxInterval: 6
   rateChannel: 1
   pauseDuringCheckpoint: 1
   avoidOverlap: 1
@@ -1128,8 +1128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   prefab: {fileID: 2617667743416950051, guid: a960189d09b86bc4fad06cdcc273a53e, type: 3}
   poolSize: 5
-  minInterval: 2
-  maxInterval: 5
+  minInterval: 2.5
+  maxInterval: 4
   rateChannel: 2
   pauseDuringCheckpoint: 1
   avoidOverlap: 1
@@ -2503,8 +2503,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.6947651
+  m_Offset: {x: 0.016820222, y: 0}
+  m_Radius: 0.40209416
 --- !u!50 &1439639402
 Rigidbody2D:
   serializedVersion: 5
@@ -3090,8 +3090,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
   prefab: {fileID: 140859610126656614, guid: 6e320abe10bf1af4fb5f1a23581df33d, type: 3}
   poolSize: 12
-  minInterval: 1.5
-  maxInterval: 2.5
+  minInterval: 9
+  maxInterval: 15
   rateChannel: 3
   pauseDuringCheckpoint: 1
   avoidOverlap: 1
@@ -9352,14 +9352,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe5750e622df9344e96529f6954e32a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DifficultyManager
-  scrollStep: 0.08
-  enemyRateStep: 0.12
+  scrollStep: 0.06
+  enemyRateStep: 0.15
   orbRateStep: 0.1
-  maxScroll: 2
+  maxScroll: 1.8
   maxEnemyRate: 2.5
-  minOrbRate: 0.4
-  islandRateStep: 0.1
-  maxIslandRate: 2.5
+  minOrbRate: 0.45
+  islandRateStep: 0.18
+  maxIslandRate: 2.2
 --- !u!4 &2093838749
 Transform:
   m_ObjectHideFlags: 0
