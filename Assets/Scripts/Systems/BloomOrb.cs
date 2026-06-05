@@ -12,6 +12,9 @@ public class BloomOrb : MonoBehaviour, ISpawnable
     [SerializeField] private float minX = -4f;     // keep inside the river channel
     [SerializeField] private float maxX = 4f;
 
+    [Header("Pickup VFX")]
+    [SerializeField] private GameObject pickupBurstPrefab;   // PollenBurst one-shot
+
     [SerializeField] private AudioClip pickupClip;   // refuel chime
     public void OnSpawned()
     {
@@ -26,12 +29,16 @@ public class BloomOrb : MonoBehaviour, ISpawnable
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
-        HoneyTank tank = other.GetComponent<HoneyTank>();
-        if (tank == null) return;
+{
+    HoneyTank tank = other.GetComponent<HoneyTank>();
+    if (tank == null) return;
 
-        tank.Refuel();
-        AudioManager.Instance?.PlaySfx(pickupClip);   // NEW
-        gameObject.SetActive(false);
-    }
+    tank.Refuel();
+    AudioManager.Instance?.PlaySfx(pickupClip);   // your existing pickup SFX
+
+    if (pickupBurstPrefab != null)
+        Instantiate(pickupBurstPrefab, transform.position, Quaternion.identity);
+
+    gameObject.SetActive(false);   // consumed → back to the pool
+}
 }

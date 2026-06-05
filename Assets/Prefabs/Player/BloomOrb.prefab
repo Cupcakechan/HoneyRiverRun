@@ -173,4 +173,5 @@ MonoBehaviour:
   despawnY: -7
   minX: -4
   maxX: 4
+  pickupBurstPrefab: {fileID: 6226312421571594119, guid: 48f12653c406cb84db4b7a5dc9ff917c, type: 3}
   pickupClip: {fileID: 8300000, guid: e8954462bbfffcf4691842b531cd7479, type: 3}
