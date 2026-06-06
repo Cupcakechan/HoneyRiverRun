@@ -23,6 +23,11 @@ public class Spawner : MonoBehaviour
     [Tooltip("Skip spawning while the river is in a narrow taper/checkpoint stretch.")]
     [SerializeField] private bool pauseDuringCheckpoint = true;
 
+    [Header("Introduction")]
+
+    [Tooltip("Don't spawn until this many checkpoints have been passed. 0 = from the start.")]
+    [SerializeField] private int unlockAtGate = 0;
+
     [Header("Overlap avoidance")]
     [Tooltip("Re-roll (then skip) a spawn that lands too close to another recent spawn.")]
     [SerializeField] private bool avoidOverlap = true;
@@ -48,16 +53,19 @@ public class Spawner : MonoBehaviour
     }
 
     private void Update()
-    {
-        timer -= Time.deltaTime;
-        if (timer > 0f) return;
+{
+    timer -= Time.deltaTime;
+    if (timer > 0f) return;
 
-        timer = NextInterval();
+    timer = NextInterval();   // reset every cycle so spawns never "stack up"
 
-        if (pauseDuringCheckpoint && RiverState.InCheckpointStretch) return;
+    // Hold this enemy type until enough checkpoints have been passed.
+    if (GameManager.Instance != null && GameManager.Instance.GatesPassed < unlockAtGate) return;
 
-        SpawnOne();
-    }
+    if (pauseDuringCheckpoint && RiverState.InCheckpointStretch) return;
+
+    SpawnOne();
+}
 
     private float NextInterval()
     {

@@ -467,8 +467,9 @@ MonoBehaviour:
   maxInterval: 6
   rateChannel: 1
   pauseDuringCheckpoint: 1
+  unlockAtGate: 0
   avoidOverlap: 1
-  minSpawnGap: 2
+  minSpawnGap: 0
   placementTries: 4
   overlapHoldSeconds: 1.2
 --- !u!4 &325935883
@@ -1132,6 +1133,7 @@ MonoBehaviour:
   maxInterval: 4
   rateChannel: 2
   pauseDuringCheckpoint: 1
+  unlockAtGate: 0
   avoidOverlap: 1
   minSpawnGap: 2
   placementTries: 4
@@ -1460,6 +1462,61 @@ MonoBehaviour:
   pressedScale: 0.9
   speed: 16
   submitPulse: 0.1
+--- !u!1 &793099198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793099200}
+  - component: {fileID: 793099199}
+  m_Layer: 0
+  m_Name: DragonflySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &793099199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793099198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be27c18502fc4849bffa764d199a19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Spawner
+  prefab: {fileID: 3138257241490410964, guid: 3250753855ece7e488b1054966da43c0, type: 3}
+  poolSize: 8
+  minInterval: 4
+  maxInterval: 6.5
+  rateChannel: 1
+  pauseDuringCheckpoint: 1
+  unlockAtGate: 1
+  avoidOverlap: 1
+  minSpawnGap: 0
+  placementTries: 4
+  overlapHoldSeconds: 1.2
+--- !u!4 &793099200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793099198}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809481049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,6 +3151,7 @@ MonoBehaviour:
   maxInterval: 15
   rateChannel: 3
   pauseDuringCheckpoint: 1
+  unlockAtGate: 0
   avoidOverlap: 1
   minSpawnGap: 2
   placementTries: 4
@@ -9863,6 +9921,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1794065600}
   - {fileID: 325935883}
+  - {fileID: 793099200}
   - {fileID: 727468950}
   - {fileID: 1607733166}
   - {fileID: 2093838749}
